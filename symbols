@@ -381,6 +381,7 @@ libmbedcrypto.so.16:mbedtls_mpi_core_clz
 libmbedcrypto.so.16:mbedtls_mpi_core_cond_assign
 libmbedcrypto.so.16:mbedtls_mpi_core_cond_swap
 libmbedcrypto.so.16:mbedtls_mpi_core_exp_mod
+libmbedcrypto.so.16:mbedtls_mpi_core_exp_mod_unsafe
 libmbedcrypto.so.16:mbedtls_mpi_core_exp_mod_working_limbs
 libmbedcrypto.so.16:mbedtls_mpi_core_fill_random
 libmbedcrypto.so.16:mbedtls_mpi_core_from_mont_rep
@@ -404,6 +405,7 @@ libmbedcrypto.so.16:mbedtls_mpi_core_write_le
 libmbedcrypto.so.16:mbedtls_mpi_div_int
 libmbedcrypto.so.16:mbedtls_mpi_div_mpi
 libmbedcrypto.so.16:mbedtls_mpi_exp_mod
+libmbedcrypto.so.16:mbedtls_mpi_exp_mod_unsafe
 libmbedcrypto.so.16:mbedtls_mpi_fill_random
 libmbedcrypto.so.16:mbedtls_mpi_free
 libmbedcrypto.so.16:mbedtls_mpi_gcd
@@ -740,6 +742,7 @@ libmbedcrypto.so.16:psa_crypto_local_input_alloc
 libmbedcrypto.so.16:psa_crypto_local_input_free
 libmbedcrypto.so.16:psa_crypto_local_output_alloc
 libmbedcrypto.so.16:psa_crypto_local_output_free
+libmbedcrypto.so.16:psa_custom_key_parameters_are_default
 libmbedcrypto.so.16:psa_destroy_key
 libmbedcrypto.so.16:psa_destroy_persistent_key
 libmbedcrypto.so.16:psa_driver_wrapper_export_public_key
@@ -750,8 +753,10 @@ libmbedcrypto.so.16:psa_export_key_internal
 libmbedcrypto.so.16:psa_export_public_key
 libmbedcrypto.so.16:psa_export_public_key_internal
 libmbedcrypto.so.16:psa_format_key_data_for_storage
+libmbedcrypto.so.16:psa_free_key_slot
 libmbedcrypto.so.16:psa_free_persistent_key_data
 libmbedcrypto.so.16:psa_generate_key
+libmbedcrypto.so.16:psa_generate_key_custom
 libmbedcrypto.so.16:psa_generate_key_ext
 libmbedcrypto.so.16:psa_generate_key_internal
 libmbedcrypto.so.16:psa_generate_random
@@ -786,10 +791,10 @@ libmbedcrypto.so.16:psa_key_derivation_input_key
 libmbedcrypto.so.16:psa_key_derivation_key_agreement
 libmbedcrypto.so.16:psa_key_derivation_output_bytes
 libmbedcrypto.so.16:psa_key_derivation_output_key
+libmbedcrypto.so.16:psa_key_derivation_output_key_custom
 libmbedcrypto.so.16:psa_key_derivation_output_key_ext
 libmbedcrypto.so.16:psa_key_derivation_set_capacity
 libmbedcrypto.so.16:psa_key_derivation_setup
-libmbedcrypto.so.16:psa_key_production_parameters_are_default
 libmbedcrypto.so.16:psa_load_persistent_key
 libmbedcrypto.so.16:psa_mac_abort
 libmbedcrypto.so.16:psa_mac_compute
@@ -932,6 +937,7 @@ libmbedtls.so.21:mbedtls_ssl_conf_session_tickets_cb
 libmbedtls.so.21:mbedtls_ssl_conf_sig_algs
 libmbedtls.so.21:mbedtls_ssl_conf_sig_hashes
 libmbedtls.so.21:mbedtls_ssl_conf_sni
+libmbedtls.so.21:mbedtls_ssl_conf_tls13_enable_signal_new_session_tickets
 libmbedtls.so.21:mbedtls_ssl_conf_tls13_key_exchange_modes
 libmbedtls.so.21:mbedtls_ssl_conf_transport
 libmbedtls.so.21:mbedtls_ssl_conf_verify
@@ -1083,6 +1089,7 @@ libmbedtls.so.21:mbedtls_ssl_tls13_compute_application_transform
 libmbedtls.so.21:mbedtls_ssl_tls13_compute_handshake_transform
 libmbedtls.so.21:mbedtls_ssl_tls13_compute_resumption_master_secret
 libmbedtls.so.21:mbedtls_ssl_tls13_create_psk_binder
+libmbedtls.so.21:mbedtls_ssl_tls13_crypto_init
 libmbedtls.so.21:mbedtls_ssl_tls13_derive_application_secrets
 libmbedtls.so.21:mbedtls_ssl_tls13_derive_early_secrets
 libmbedtls.so.21:mbedtls_ssl_tls13_derive_handshake_secrets
@@ -1119,6 +1126,7 @@ libmbedtls.so.21:mbedtls_ssl_update_handshake_status
 libmbedtls.so.21:mbedtls_ssl_update_in_pointers
 libmbedtls.so.21:mbedtls_ssl_update_out_pointers
 libmbedtls.so.21:mbedtls_ssl_validate_ciphersuite
+libmbedtls.so.21:mbedtls_ssl_verify_certificate
 libmbedtls.so.21:mbedtls_ssl_write
 libmbedtls.so.21:mbedtls_ssl_write_alpn_ext
 libmbedtls.so.21:mbedtls_ssl_write_certificate
