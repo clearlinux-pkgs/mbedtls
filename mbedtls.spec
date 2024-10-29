@@ -7,7 +7,7 @@
 #
 Name     : mbedtls
 Version  : 3.6.2
-Release  : 6
+Release  : 7
 URL      : https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.2/mbedtls-3.6.2.tar.bz2
 Source0  : https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.2/mbedtls-3.6.2.tar.bz2
 Summary  : @PKGCONFIG_PROJECT_DESCRIPTION@
