@@ -979,6 +979,7 @@ libmbedtls.so.21:mbedtls_ssl_get_extension_id
 libmbedtls.so.21:mbedtls_ssl_get_extension_mask
 libmbedtls.so.21:mbedtls_ssl_get_extension_name
 libmbedtls.so.21:mbedtls_ssl_get_handshake_transcript
+libmbedtls.so.21:mbedtls_ssl_get_hostname_pointer
 libmbedtls.so.21:mbedtls_ssl_get_hs_sni
 libmbedtls.so.21:mbedtls_ssl_get_input_max_frag_len
 libmbedtls.so.21:mbedtls_ssl_get_key_exchange_md_tls1_2
@@ -1034,7 +1035,8 @@ libmbedtls.so.21:mbedtls_ssl_renegotiate
 libmbedtls.so.21:mbedtls_ssl_resend
 libmbedtls.so.21:mbedtls_ssl_resend_hello_request
 libmbedtls.so.21:mbedtls_ssl_reset_checksum
-libmbedtls.so.21:mbedtls_ssl_reset_in_out_pointers
+libmbedtls.so.21:mbedtls_ssl_reset_in_pointers
+libmbedtls.so.21:mbedtls_ssl_reset_out_pointers
 libmbedtls.so.21:mbedtls_ssl_reset_transcript_for_hrr
 libmbedtls.so.21:mbedtls_ssl_send_alert_message
 libmbedtls.so.21:mbedtls_ssl_send_fatal_handshake_failure
